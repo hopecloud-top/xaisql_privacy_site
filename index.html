@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XAISQL 隐私政策</title>
+    <style>
+        :root {
+            --primary-color: #6a11cb;
+            --secondary-color: #2575fc;
+            --text-color: #333;
+            --light-text: #666;
+            --lighter-text: #999;
+            --background: #fff;
+            --light-bg: #f9f9ff;
+            --border: #eaeaea;
+            --highlight: rgba(106, 17, 203, 0.1);
+            --font-main: 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--background);
+            padding: 0;
+            margin: 0;
+        }
+
+        .header {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background: var(--background);
+            border-radius: 50% 50% 0 0;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            background: var(--background);
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        .section:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 28px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            font-size: 22px;
+            margin: 25px 0 15px;
+            font-weight: 600;
+        }
+
+        p, li {
+            margin-bottom: 15px;
+            color: var(--light-text);
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background-color: var(--highlight);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .highlight p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        .date {
+            text-align: center;
+            color: var(--lighter-text);
+            margin: 40px 0 20px;
+            font-size: 14px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            background-color: var(--light-bg);
+            border-top: 1px solid var(--border);
+        }
+
+        .footer p {
+            color: var(--lighter-text);
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: white;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
+        }
+
+        .contact:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(106, 17, 203, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 60px 0 40px;
+            }
+            .header h1 {
+                font-size: 32px;
+            }
+            .header p {
+                font-size: 16px;
+            }
+            .section {
+                padding: 25px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>XAISQL 隐私政策</h1>
+        <p>我们重视您的隐私，本政策详细说明了我们如何收集、使用和保护您的个人信息</p>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>引言</h2>
+            <p>欢迎使用 XAISQL 应用。XAISQL 是一款人工智能SQL助手，通过AI技术帮助用户简化数据库查询操作。我们非常重视您的隐私保护和个人信息安全，并致力于维护您对我们的信任。</p>
+            <p>本隐私政策旨在向您说明我们如何收集、使用、存储和共享您的个人信息，以及您享有的相关权利。请您仔细阅读本政策，以了解我们的隐私保护实践。</p>
+            
+            <div class="highlight">
+                <p>如果您不同意本隐私政策中的任何内容，请勿使用 XAISQL 应用。当您使用我们的应用时，即表示您同意本隐私政策中描述的数据处理方式。</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>信息收集</h2>
+            <p>我们收集的信息主要用于提供、维护和改进我们的服务。我们收集的信息类型包括：</p>
+            
+            <h3>1. 您主动提供的信息</h3>
+            <ul>
+                <li><strong>账户信息</strong>：<del>当您注册账户时，我们会收集您的用户名、电子邮件地址和密码。</del> <span style="color: #2575fc;">（注：当前版本的XAISQL不收集任何账户信息，无需注册即可使用。）</span></li>
+                <li><strong>支付信息</strong>：当您购买订阅服务时，我们会收集必要的支付信息，如交易记录和账单地址。支付处理由第三方支付服务提供商完成，我们不会存储您的完整支付卡详情。</li>
+                <li><strong>用户反馈</strong>：当您向我们提供反馈或联系我们时，我们会收集您提供的信息。</li>
+            </ul>
+
+            <h3>2. 自动收集的信息</h3>
+            <ul>
+                <li><strong>设备信息</strong>：我们会收集您的设备标识符（如 IDFA）、设备类型、操作系统版本等信息。</li>
+                <li><strong>使用数据</strong>：我们会收集您如何使用我们的应用程序的信息，如功能使用频率、点击事件、查询历史、应用崩溃信息等。</li>
+                <li><strong>广告数据</strong>：我们会收集与您查看或互动的广告相关的数据，如广告展示和点击次数。</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>信息使用</h2>
+            <p>我们使用收集到的信息主要用于以下目的：</p>
+            <ul>
+                <li>提供、维护和改进我们的服务，包括生成 SQL 查询和提供优化建议</li>
+                <li>处理您的订阅和支付</li>
+                <li>提供客户支持</li>
+                <li>发送服务通知和更新信息</li>
+                <li>在获得您同意的情况下，发送营销信息</li>
+                <li>监控和分析应用使用情况，以改进用户体验</li>
+                <li>检测、预防和解决技术问题或欺诈行为</li>
+                <li>遵守适用的法律法规</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>信息共享</h2>
+            <p>我们重视您信息的保密性，除以下情况外，不会与第三方共享您的个人信息：</p>
+            <ul>
+                <li><strong>服务提供商</strong>：我们可能与帮助我们提供服务的第三方服务提供商共享信息，如云存储提供商、分析服务提供商和广告合作伙伴。这些提供商仅限于为我们提供服务的目的处理信息。</li>
+                <li><strong>业务转让</strong>：如果我们参与合并、收购或资产出售，您的信息可能作为该交易的一部分被转让。</li>
+                <li><strong>法律要求</strong>：如果法律要求、法院命令或政府机构要求，我们可能会披露您的信息。</li>
+                <li><strong>保护权利</strong>：为了保护我们的权利、财产或安全，以及我们的用户或公众的安全。</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>数据安全</h2>
+            <p>我们实施了适当的技术和组织措施，以保护您的个人信息免受意外丢失、使用或未经授权的访问、更改或披露。这些措施包括：</p>
+            <ul>
+                <li>使用加密技术保护数据传输和存储</li>
+                <li>实施访问控制机制，限制对个人信息的访问</li>
+                <li>定期审查和更新我们的安全措施</li>
+                <li>对员工进行数据保护培训</li>
+            </ul>
+            <p>尽管我们努力保护您的个人信息，但请注意，没有任何传输方法或电子存储方法是100%安全的。因此，我们不能保证您的信息的绝对安全。</p>
+        </div>
+
+        <div class="section">
+            <h2>广告和分析服务</h2>
+            <p>我们的应用使用第三方广告和分析服务，这些服务可能会收集关于您的信息，包括：</p>
+            <ul>
+                <li>您的设备标识符</li>
+                <li>应用使用数据</li>
+                <li>IP地址</li>
+                <li>位置信息（如果您授予权限）</li>
+            </ul>
+            <p>我们使用的第三方服务包括：</p>
+            <ul>
+                <li>OSETSDK - 提供广告服务</li>
+                <li>其他分析服务，用于了解用户行为和改进应用性能</li>
+            </ul>
+            <p>这些服务的使用受其各自隐私政策的约束。我们鼓励您查看这些第三方服务提供商的隐私政策，以了解他们如何处理您的信息。</p>
+        </div>
+
+        <div class="section">
+            <h2>您的权利</h2>
+            <p>根据您所在地区的隐私法规，您可能拥有以下权利：</p>
+            <ul>
+                <li><strong>访问权</strong>：您有权要求访问我们持有的关于您的个人信息。</li>
+                <li><strong>更正权</strong>：如果您认为我们持有的关于您的个人信息不准确或不完整，您有权要求更正。</li>
+                <li><strong>删除权</strong>：在某些情况下，您有权要求删除您的个人信息。</li>
+                <li><strong>限制处理权</strong>：在某些情况下，您有权要求限制我们对您个人信息的处理。</li>
+                <li><strong>数据可携权</strong>：您有权以结构化、常用和机器可读的格式接收您提供给我们的个人信息，并有权将这些数据传输给另一个控制者。</li>
+                <li><strong>反对权</strong>：在某些情况下，您有权反对我们处理您的个人信息。</li>
+                <li><strong>撤回同意权</strong>：如果我们基于您的同意处理您的个人信息，您有权在任何时候撤回您的同意。</li>
+            </ul>
+            <p>如需行使上述任何权利，请使用本政策中提供的联系方式与我们联系。</p>
+        </div>
+
+        <div class="section">
+            <h2>儿童隐私</h2>
+            <p>XAISQL 应用不适用于13岁以下的儿童。我们不会故意收集13岁以下儿童的个人信息。如果您是父母或监护人，并且您认为您的孩子向我们提供了个人信息，请联系我们，我们将确保删除相关信息。</p>
+        </div>
+
+        <div class="section">
+            <h2>隐私政策更新</h2>
+            <p>我们可能会不时更新本隐私政策以反映我们实践的变化或其他运营、法律或监管原因。我们将通过在应用中发布更新后的政策来通知您任何变更。我们鼓励您定期查看本政策，以了解我们如何保护您的信息。</p>
+            <p>在我们对隐私政策做出重大更改时，我们可能会通过应用内通知或电子邮件通知您。</p>
+        </div>
+
+        <div class="section">
+            <h2>联系我们</h2>
+            <p>如果您对本隐私政策有任何疑问、意见或请求，请通过以下方式联系我们：</p>
+            <p style="text-align: center; margin-top: 20px;">
+                <span class="logo">XAISQL</span><br>
+                电子邮件: support@xaisql.app<br>
+                <a href="mailto:support@xaisql.app" class="contact">发送邮件</a>
+            </p>
+        </div>
+
+        <div class="date">
+            <p>本隐私政策最后更新日期：2024年8月10日</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 XAISQL. 保留所有权利。</p>
+    </div>
+</body>
+</html> 
